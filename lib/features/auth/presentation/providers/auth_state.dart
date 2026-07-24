@@ -8,7 +8,7 @@ class AuthState {
   final String? error;
 
   AuthState({this.usuario, this.estado = AuthStatus.initial, this.error});
-
+  
   AuthState copyWith({Usuario? usuario, AuthStatus? estado, String? error}) {
     return AuthState(
       usuario: usuario ?? this.usuario,

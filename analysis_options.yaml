@@ -26,3 +26,9 @@ linter:
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
+analyzer:
+  errors:
+    # Esto convierte la sugerencia en un error si no usas const donde es posible
+    prefer_const_constructors: error
+    prefer_const_declarations: error
+    prefer_const_literals_to_create_immutables: error

@@ -4,4 +4,5 @@ class StorageKeys {
   static const isFirstTime = 'is_first_time';
   static const isDarkMode = 'is_dark_mode';
   static const locale = 'locale';
+  static const isLoggedIn = 'is_logged_in';
 }
