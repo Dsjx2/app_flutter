@@ -1,19 +1,15 @@
+import 'package:proyecto_integrador_login/features/productos/domain/models/producto.dart';
+
 class ProductoState {
-  final int id;
-  final String nombre;
-  final String descripcion;
-  final double precio;
-  final int stock;
-  final String imageUrl;
-  final int categoriaId;
+  final List<Producto> productos;
+  final bool isLoading;
+  final String? error;
+  final String? productoQuery;
 
   ProductoState({
-    required this.id,
-    required this.nombre,
-    required this.descripcion,
-    required this.precio,
-    required this.stock,
-    required this.imageUrl,
-    required this.categoriaId,
+    required this.productos,
+    required this.isLoading,
+    required this.error,
+    required this.productoQuery,
   });
 }
